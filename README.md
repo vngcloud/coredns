@@ -308,3 +308,12 @@ appreciated and we will publicly thank you for it.
 
 Please consult [security vulnerability disclosures and security fix and release process
 document](https://github.com/coredns/coredns/blob/master/.github/SECURITY.md)
+
+## Change
+
+Follow this instruction from [cilium](https://docs.cilium.io/en/latest/network/clustermesh/mcsapi/#installing-coredns-multicluster)
+
+* Modify file `plugin.cfg`
+* `make`
+* `docker build . -t vcr.vngcloud.vn/81-vks-public/coredns:1.11.4`
+* `docker push vcr.vngcloud.vn/81-vks-public/coredns:1.11.4`
